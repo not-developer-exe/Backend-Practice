@@ -1,10 +1,8 @@
 const express = require('express')
-const controller = require('./controller/index.controller')
-const userController = require('./controller/user.controller')
+const indexRoutes = require('./routes/index.routes')
 const app = express()
 
-app.get('/', controller.indexController) 
-app.get('/users/profile', userController.getProfileController)
+app.use('/', indexRoutes)
 
 
 module.exports = app;
