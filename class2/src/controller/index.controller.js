@@ -3,3 +3,7 @@ module.exports.indexController = (req, res) =>{
         msg: 'Chaloooo'
     })
 }
+
+module.exports.aboutController = (req, res) =>{
+    res.send('Mai nahi bataungaa')
+}

@@ -4,5 +4,6 @@ const router = express.Router()
 
 
 router.get('/', controller.indexController)
+router.get('/about', controller.aboutController)
 
 module.exports = router
