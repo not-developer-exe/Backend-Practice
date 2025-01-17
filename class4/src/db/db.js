@@ -10,11 +10,19 @@ mongoose
     console.log(err);
   });
 
+  const driverSchema = new mongoose.Schema({
+  name: {
+    type: String,
+  },
+  mobile: {
+    type: String,
+  },
+  password: {
+    type: String,
+  },
+});
 
-const userSchema = new mongoose.Schema({
-    username: String,
-    age: Number,
-    email: String
-})
 
-mongoose.model("user", userSchema)
+const driverModel = mongoose.model("driver", driverSchema)
+
+module.exports = driverModel
